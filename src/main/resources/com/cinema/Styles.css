@@ -1,0 +1,29 @@
+.combo-box-base {
+  -fx-body-color:  #0C151C;
+  -fx-text-fill: #e4e5ea;
+}
+
+.combo-box .list-cell {
+  -fx-text-fill: #e4e5ea;
+}
+
+.combo-box .combo-box-popup .list-cell:hover {
+  -fx-text-fill: #e4e5ea;
+  -fx-background-color:  #6B99C3;
+}
+
+.combo-box .combo-box-popup .list-view, .combo-box .combo-box-popup .list-cell {
+  -fx-background-color:  #0C151C;
+  -fx-text-fill: #e4e5ea;
+}
+
+
+.context-menu {
+  -fx-background-color:  #0C151C;
+  -fx-background-radius: 10;
+}
+
+.context-menu .menu-item:focused {
+  -fx-background-color: #6B99C3;
+  -fx-background-radius: 10;
+}

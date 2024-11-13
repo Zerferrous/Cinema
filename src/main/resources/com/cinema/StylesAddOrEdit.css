@@ -1,0 +1,106 @@
+.combo-box-base {
+  -fx-body-color: #6B99C3;
+  -fx-text-fill: #e4e5ea;
+  -fx-font-size: 14;
+}
+
+.combo-box .list-cell {
+  -fx-text-fill: #e4e5ea;
+}
+
+.combo-box .combo-box-popup .list-cell:hover {
+  -fx-text-fill: #e4e5ea;
+  -fx-background-color:   #6B99C3;
+}
+
+.combo-box .combo-box-popup .list-view, .combo-box .combo-box-popup .list-cell {
+  -fx-background-color:  #6B99C3;
+  -fx-text-fill: #e4e5ea;
+}
+
+.text-area {
+    -fx-background-color: #6B99C3;
+    -fx-background-radius: 10;
+    -fx-text-fill: #e4e5ea;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .scroll-bar {
+    -fx-background-color: #6B99C3;
+}
+.text-area .scroll-pane .scroll-bar .thumb {
+    -fx-background-color:  #0C151C;
+}
+
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+.text-area .content {
+    -fx-background-color: #6B99C3;
+    -fx-background-radius: 10;
+}
+
+.spinner .text-field {
+    -fx-font-size: 14;
+    -fx-text-fill: #e4e5ea;
+}
+
+.spinner .increment-arrow-button {
+    -fx-background-color: #6B99C3;
+}
+
+.spinner .decrement-arrow-button {
+    -fx-background-color: #6B99C3;
+}
+
+.spinner .text-field {
+    -fx-background-color: #6B99C3;
+}
+
+.date-picker .text-field {
+    -fx-background-color: #6B99C3;
+    -fx-font-size: 14;
+    -fx-text-fill: #e4e5ea;
+}
+
+.date-picker .cell {
+	-fx-background-color: #6B99C3;
+	-fx-text-fill: #e4e5ea;
+}
+
+.date-picker .cell:hover {
+	-fx-background-color:  #0C151C;
+	-fx-text-fill: #e4e5ea;
+}
+
+.date-picker .selected {
+	-fx-background-color: #0C151C;
+	-fx-text-fill: #e4e5ea;
+}
+
+.date-picker-popup  {
+	-fx-border-color: transparent;
+}
+.date-picker-popup .month-year-pane {
+	-fx-background-color: #6B99C3;
+}
+.date-picker-popup .month-year-pane .label {
+	-fx-text-fill: #e4e5ea;
+}
+.date-picker-popup .week-number-cell {
+	-fx-text-fill: #e4e5ea;;
+}
+
+.searchable-combo-box .text-field {
+    -fx-background-color: #6B99C3;
+    -fx-text-fill: #e4e5ea;
+    -fx-font-size: 14;
+}

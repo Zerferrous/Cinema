@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.CheckComboBox?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #16354D;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cinema.FilmAddOrEditController">
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: #0C151C;" BorderPane.alignment="CENTER">
+               <children>
+                  <FontAwesomeIconView fill="#6b99c3" glyphName="FILM" size="64" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="7.0" left="15.0" right="15.0" top="15.0" />
+                     </VBox.margin>
+                  </FontAwesomeIconView>
+                  <Label text="Кинотеатр CinemaView" textAlignment="CENTER" textFill="#e4e5ea" wrapText="true">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="7.0" />
+                     </VBox.margin>
+                  </Label>
+                  <VBox alignment="BOTTOM_CENTER" prefHeight="29.0" prefWidth="200.0" style="-fx-background-color: #0C151C;" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="backBtn" alignment="CENTER" mnemonicParsing="false" onAction="#backBtnClick" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #6B99C3; -fx-background-radius: 10;" text="Отмена" textFill="#e4e5ea">
+                           <VBox.margin>
+                              <Insets bottom="15.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox fx:id="mainInfoBox" prefHeight="238.0" prefWidth="569.0">
+                     <children>
+                        <VBox maxWidth="400.0" prefHeight="200.0" prefWidth="250.0" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                           <children>
+                              <TextField fx:id="titleField" maxWidth="250.0" prefWidth="250.0" promptText="Название фильма" style="-fx-background-color: #6B99C3; -fx-background-radius: 10; -fx-text-fill: #e4e5ea;">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="4.0" top="4.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <CheckComboBox fx:id="genresBox" maxWidth="150.0" prefWidth="150.0" title="Жанр(ы)">
+                                 <VBox.margin>
+                                    <Insets bottom="4.0" top="4.0" />
+                                 </VBox.margin>
+                              </CheckComboBox>
+                              <TextField fx:id="yearField" maxWidth="100.0" prefWidth="100.0" promptText="Год" style="-fx-background-color: #6B99C3; -fx-background-radius: 10; -fx-text-fill: #e4e5ea;">
+                                 <VBox.margin>
+                                    <Insets bottom="4.0" top="4.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="countryField" maxWidth="100.0" promptText="Страна" style="-fx-background-color: #6B99C3; -fx-background-radius: 10; -fx-text-fill: #e4e5ea;">
+                                 <VBox.margin>
+                                    <Insets bottom="4.0" top="4.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                              <CheckComboBox fx:id="ageBox" maxWidth="220.0" prefWidth="220.0" title="Возрастное ограничение">
+                                 <VBox.margin>
+                                    <Insets bottom="4.0" top="4.0" />
+                                 </VBox.margin>
+                              </CheckComboBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <VBox.margin>
+                                    <Insets top="4.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Label text="Часов: " textFill="#e4e5ea">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Spinner fx:id="hoursSpinner" prefHeight="30.0" prefWidth="60.0" />
+                                    <Label text="минут: " textFill="#e4e5ea">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="8.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Spinner fx:id="minutesSpinner" prefHeight="30.0" prefWidth="60.0" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="15.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Label text="Описание:" textFill="#e4e5ea">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextArea fx:id="descriptionArea" maxWidth="560.0" prefHeight="200.0" prefWidth="560.0" wrapText="true">
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextArea>
+                  <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="15.0" />
+                     </VBox.margin>
+                     <children>
+                        <VBox prefHeight="66.0" prefWidth="429.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <TextField fx:id="trailerField" maxWidth="150.0" prefWidth="150.0" promptText="Трейлер" style="-fx-background-color: #6B99C3; -fx-background-radius: 10; -fx-text-fill: #e4e5ea;">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                              <Button fx:id="photoBtn" mnemonicParsing="false" onAction="#photoBtnClick" style="-fx-background-color: #6B99C3; -fx-background-radius: 10;" text="Афиша" textFill="#e4e5ea">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="8.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="commitBtn" alignment="CENTER" mnemonicParsing="false" onAction="#commitBtnClick" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #6B99C3; -fx-background-radius: 10;" text="Подтвердить" textFill="#e4e5ea">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
