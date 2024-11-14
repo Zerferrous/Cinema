@@ -13,7 +13,7 @@ public class DataBaseHandler {
     private Connection dbConnection;
 
     public Connection getDbConnection() throws ClassNotFoundException, SQLException {
-        String connectionUrl = "jdbc:mysql://localhost:3306/cinema";
+        String connectionUrl = "jdbc:mysql://13306:3306/cinema";
         Class.forName("com.mysql.cj.jdbc.Driver");
         dbConnection = DriverManager.getConnection(connectionUrl, "root", "root");
 
