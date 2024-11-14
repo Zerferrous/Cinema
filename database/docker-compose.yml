@@ -10,7 +10,7 @@ services:
       MYSQL_ROOT_USER: root
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: javafxTest
-      MYSQL_USER: Test
+      MYSQL_USER: root
       MYSQL_PASSWORD: root
     volumes:
       - C:/Users/matve/IdeaProjects/Cinema/database/mariadb:/var/lib/mysql
