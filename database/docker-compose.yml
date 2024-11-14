@@ -9,7 +9,7 @@ services:
     environment:
       MYSQL_ROOT_USER: root
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: cinema
+      MYSQL_DATABASE: javafxTest
       MYSQL_USER: Test
       MYSQL_PASSWORD: root
     volumes:
