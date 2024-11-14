@@ -1,0 +1,20 @@
+version: '3.4'
+services:
+  mariadb:
+    image: mysql:8.0 # mariadb:11.5.2
+    ports:
+      - "13306:3306"
+    command:
+      --init-file /data/application/init.sql
+    environment:
+      MYSQL_ROOT_USER: root
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: cinema
+      MYSQL_USER: Test
+      MYSQL_PASSWORD: root
+    volumes:
+      - C:/Users/matve/IdeaProjects/Cinema/database/mariadb:/var/lib/mysql
+      - C:/Users/matve/IdeaProjects/Cinema/database/init.sql:/data/application/init.sql
+
+
+    # network_mode: "host"
